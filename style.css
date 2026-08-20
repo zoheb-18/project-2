@@ -1,237 +1,350 @@
-.learn{
-    background-image: url(image/mac\ bgimg.jpg);
-    width: 100%;
-    height: 100vh;
-    /* margin-top: 70px; */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
 }
-.shead{
-    font-size: 60px;
 
+html,
+body {
+    overflow-x: hidden;
 }
-.btn-light{
-    opacity: 0.6;
-   height: 60px; 
+
+img {
+    max-width: 100%;
 }
-.laptop{
-    padding-top: 200px;
-    
+
+/* ============ Navigation ============ */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
- .w3-hover-opacity:hover{
+
+/* ============ Hero ============ */
+.learn {
+    background-image: url("image/mac bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.laptop {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.shead {
+    font-size: clamp(2rem, 6vw, 3.75rem);
+    line-height: 1.2;
+}
+
+.learn .btn-light {
+    width: auto;
+    min-width: 260px;
+    max-width: 100%;
+    padding: 12px 24px;
+    height: auto;
+    opacity: 0.7;
+    font-size: 1.05rem;
+    white-space: normal;
+}
+
+.learn .btn-light:hover {
+    opacity: 0.95;
+}
+
+.social-logo {
+    margin-top: 60px;
+    font-size: 22px;
+}
+
+.social-logo i {
+    margin: 0 6px;
+}
+
+.w3-hover-opacity:hover {
     color: grey;
     opacity: 0.3;
+}
 
- }
- .social-logo{
-    margin-top: 80px;
- }
-.aboutus-pas{
+/* ============ About ============ */
+.aboutcompany {
     margin-top: 100px;
-} 
-.aboutcompany{
-    margin-top: 130px;
 }
-#work{
-    background-color:#F1F1F1;
-    /* padding: 100px 300px; */
-    /* width: 150%; */
+
+#about-us .row {
+    row-gap: 30px;
 }
-.button{
+
+#about-us .row p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============ Work / Design ============ */
+#work {
+    background-color: #F1F1F1;
+}
+
+.pading-work {
+    padding: 80px 0;
+}
+
+.button {
     background-color: black;
     color: white;
-    width: 31%;
-    height:8vh ;
+    width: auto;
+    padding: 14px 30px;
+    height: auto;
+    font-size: 1.1rem;
 }
-.button:hover{
-    background-color:#CCCCCC;
+
+.button:hover {
+    background-color: #CCCCCC;
 }
-.phonebldg{
+
+.phonebldg {
     width: 100%;
-     height: 55vh;
+    height: auto;
 }
-.pading-work{
-    padding: 100px 10px;
-}
-.card .btn-light{
+
+/* ============ Team ============ */
+.card .btn-light {
     width: 100%;
-    height: 7vh;
+    padding: 12px;
+    height: auto;
 }
-#hcolor{
-    margin-top: 100px;
+
+.team-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ============ Stats ============ */
+#hcolor {
+    margin-top: 80px;
     background-color: #616161;
 }
-#ourwork{
-    margin-top: 100px;
+
+/* ============ Our Work ============ */
+#ourwork {
+    margin-top: 80px;
+    padding-bottom: 40px;
 }
-.work-card{
+
+.work-card {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.work-img{
+
+.work-img {
     width: 100%;
     height: 35vh;
     object-fit: cover;
     display: block;
 }
-.work-caption{
+
+.work-caption {
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 15px;
 }
-.work-caption h4{
+
+.work-caption h4 {
     font-weight: normal;
     font-size: 22px;
     margin: 0;
 }
-.work-caption p{
+
+.work-caption p {
     margin: 5px 0 0;
     font-size: 14px;
     color: #CCCCCC;
 }
-.team-card{
-    width: 100%;
-    max-width: 18rem;
-}
-#ourskill{
+
+/* ============ Skills ============ */
+#ourskill {
     background-color: #F1F1F1;
-    margin-top: 100px;
+    margin-top: 80px;
 }
-.w3-margin-right{
-    margin-right: 100px;
+
+.w3-margin-right {
+    margin-right: 15px;
 }
-.height-program{
-    height: 100vh;
-}
-#pricing{
+
+/* ============ Pricing ============ */
+#pricing {
     background-color: #616161;
-    padding: 120px 10px;
+    padding: 80px 0;
 }
-ul{
+
+#pricing ul {
     list-style: none;
+    margin-bottom: 0;
+    height: 100%;
 }
-.price-section-1 {
+
+.price-card {
     width: 100%;
+    height: 100%;
 }
-.price-pro{
-    width: 100%;
-    
+
+.price-pro {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
-.basic-width{
-    height:17vh;
+
+.basic-width {
+    min-height: 17vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-.pro-width{
-    height: 24vh;
+
+.pro-width {
+    min-height: 24vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-.hwidth{
-     display: flex;
+
+.hwidth {
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: white; */
+    text-align: center;
 }
-.per-month-width{
-   height: 20vh; 
-   display: flex;
+
+.per-month-width {
+    min-height: 20vh;
+    display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
-.sign-btn{
+
+.sign-btn {
     background-color: black;
     color: white;
-    width: 25%;
-    height: 8vh;
+    width: auto;
+    padding: 12px 32px;
+    height: auto;
 }
-.sign-btn:hover{
+
+.sign-btn:hover {
     background-color: #CCCCCC;
 }
-.form-control{
-    border-color:#CCCCCC;
-}
-.form-control:hover{
-    border-color: black;
 
+/* ============ Contact ============ */
+#contact {
+    background-color: #F1F1F1;
+    padding-bottom: 40px;
 }
-.form-width{
+
+#contact .container {
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.form-control {
+    border-color: #CCCCCC;
+    padding: 12px;
+}
+
+.form-control:hover,
+.form-control:focus {
+    border-color: black;
+}
+
+.sendmessage-btn {
+    padding: 14px 26px;
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+.sendmessage-btn:hover {
+    background-color: #CCCCCC;
+}
+
+.map {
     width: 100%;
+    height: auto;
 }
-.submitted-details{
+
+.submitted-details {
     display: none;
     background: #fff;
     border: 1px solid #CCCCCC;
     padding: 20px;
     max-width: 600px;
 }
-.submitted-details h4{
+
+.submitted-details h4 {
     margin-bottom: 15px;
     border-bottom: 2px solid #616161;
     padding-bottom: 10px;
 }
-.detail-item{
+
+.detail-item {
     display: flex;
     align-items: baseline;
     margin-bottom: 10px;
 }
-.detail-item span{
+
+.detail-item span {
     font-weight: bold;
     min-width: 90px;
     color: #616161;
 }
-.detail-item p{
+
+.detail-item p {
     margin: 0;
     word-break: break-word;
 }
-.sendmessage-btn{
-    width: 15%;
-    height: 7vh;
+
+/* ============ To top / Footer ============ */
+#to-top {
     background-color: black;
-    color: white;
-}
-.sendmessage-btn:hover{
-    background-color: #CCCCCC;
-} 
-.map{
-    width: 100%;
-    height: 60vh;
-    /* opacity: 0.3; */
-}
-#contact{
-    background-color: #F1F1F1;
-}
-.ontop-btn{
-    width: 11%;
-    height: 7vh;
-    background-color: #F1F1F1;
-    color:black;
-}
-#to-top{
-    background-color: black;
-}
-.ontop-btn:hover{
-    background-color:#CCCCCC;
-}
-.social-logo2{
-font-size: 25px;
+    padding: 30px 0;
 }
 
+.ontop-btn {
+    padding: 12px 26px;
+    height: auto;
+    width: auto;
+    background-color: #F1F1F1;
+    color: black;
+}
+
+.ontop-btn:hover {
+    background-color: #CCCCCC;
+}
+
+.social-logo2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.social-logo2 i {
+    margin: 0 6px;
+}
+
+/* ============ Responsive ============ */
 @media (max-width: 991.98px) {
-    .navbar-collapse {
-        justify-content: flex-start;
-    }
-    .laptop {
-        padding-top: 130px;
-    }
-    .shead {
-        font-size: 44px;
-    }
     #pricing .container,
     #work .container,
     #contact .container,
@@ -239,68 +352,65 @@ font-size: 25px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
     .phonebldg {
         width: 100%;
-        margin-left: 0 !important;
     }
-    .button {
-        width: 45%;
-    }
-    .price-pro,
-    .price-section-1 {
-        margin-left: 0 !important;
-    }
-    .sendmessage-btn {
-        width: 35%;
-    }
-    .map {
-        height: 55vh;
-    }
-    .ontop-btn {
-        width: 30%;
+
+    .aboutcompany {
+        margin-top: 80px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .shead {
-        font-size: 34px;
+    .pading-work {
+        padding: 60px 0;
     }
-    .laptop {
-        padding-top: 100px;
-    }
-    .social-logo {
-        margin-top: 50px;
-    }
+
     .work-img {
         height: 30vh;
     }
-    .sendmessage-btn {
-        width: 50%;
-    }
-    .map {
-        height: 45vh;
+
+    .learn h4 {
+        font-size: 1.15rem;
     }
 }
 
 @media (max-width: 575.98px) {
     .shead {
-        font-size: 26px;
+        font-size: 1.7rem;
     }
-    .btn-light {
-        width: 100%;
+
+    .learn .btn-light {
+        min-width: 220px;
+        padding: 12px 18px;
+        font-size: 0.95rem;
     }
-    .button {
-        width: 70%;
+
+    .social-logo {
+        margin-top: 40px;
+        font-size: 18px;
     }
-    .sendmessage-btn {
-        width: 80%;
+
+    .social-logo i {
+        margin: 0 4px;
     }
-    .ontop-btn {
-        width: 45%;
-    }
+
     .basic-width,
     .pro-width,
     .per-month-width {
-        height: auto;
+        min-height: 12vh;
+    }
+
+    .aboutcompany {
+        margin-top: 60px;
+    }
+
+    #pricing {
+        padding: 60px 0;
+    }
+
+    .sign-btn {
+        padding: 10px 24px;
     }
 }
